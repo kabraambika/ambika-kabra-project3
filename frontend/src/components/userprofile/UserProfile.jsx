@@ -20,7 +20,6 @@ function UserProfile() {
         async function getUserDetails() {
             const userResponse = await axios.get('/api/users/'+currentUsername);
             setCurrentUserDetails(userResponse.data)
-            console.log(userResponse.data)
             setOptionalDesc(userResponse.data.bio)
         }
         async function getPostDetails() {
