@@ -85,5 +85,13 @@
 
 .bio-label {
     font-size: smaller;
-    color: var(--twitter-light-grey);
+    color: var(--twitter-primary-lighter-blue);
+}
+
+.bio-text-container {
+    font-size: smaller;
+}
+
+.padding-right-15px {
+    padding-right: 15px;
 }
