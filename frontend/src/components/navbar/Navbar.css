@@ -1,0 +1,13 @@
+.app-navbar {
+  width: 100%;
+  background-color: var(--twitter-light-grey);
+}
+
+.navbar-btn {
+    width: 100px;
+}
+
+.twitter-navbar-logo {
+  width: 30px;
+  height: 30px;
+}
