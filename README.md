@@ -25,3 +25,18 @@ https://ambika-kabra-project3.onrender.com
 3. username: Hazel, password: Hazel@123
 4. username: Barry, password: Barry@123
 
+## Writeup
+- What were some challenges you faced while making this app?
+  - I faced a major challenge while calling api from frontend. Sometimes, api relative paths were provided incorrectly which started through errors and were difficult to debug.
+  - I faced changes while updating post details in mongodb as update function required pattern and UI needed to be updated at the same time.
+- Given more time, what additional features, functional or design changes would you make?
+  - Like, share, favorite, comments for each tweet
+  - Followers and following feature along with notifications
+- What assumptions did you make while working on this assignment? 
+  - Username will be unique for each account.
+  - Users will tweet in text only.
+- How long did this assignment take to complete?
+  - Approx. 4 days
+- Bonus implementation 
+  - Early submission
+  - Password encryption
