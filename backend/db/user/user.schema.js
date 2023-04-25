@@ -11,6 +11,10 @@ exports.UserSchema = new Schema({
         require: true,
         required: true
     },
+    bio: {
+        type: String,
+        default: "",
+    },
     timestamp: {
         type: Date,
         default: Date.now,

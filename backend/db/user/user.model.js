@@ -14,7 +14,16 @@ function findUserByUsername(username) {
     return UserModel.findOne({username: username}).exec();
 }
 
+function updateUserBio(username, bioContent) {
+    return UserModel.updateOne({"username": username}, { $set: { "bio": bioContent}});
+}
+
+function getAllUsers() {
+    return UserModel.find().exec();
+}
 module.exports = {
     createUser,
     findUserByUsername,
+    updateUserBio,
+    getAllUsers
 }

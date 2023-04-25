@@ -101,4 +101,20 @@ router.get('/:username', async function(req, res) {
     
 })
 
+// this post api request used for updating post by id in DB
+router.post('/edit/:username', async function(request, response) {
+    const username = request.params.username;
+    const bioContent = request.body.bio;
+    
+    try {
+        const newPostResponse = await UserModel.updateUserBio(username, bioContent)
+        
+        return response.status(200).send(newPostResponse);
+    }
+    catch(e) {
+        return response.status(409).send("Error: Unable to save the bio of user!"+e);
+    }
+    
+})
+
 module.exports = router
