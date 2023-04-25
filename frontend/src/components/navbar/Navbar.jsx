@@ -6,11 +6,12 @@ import { Link } from "react-router-dom";
 import { Container, NavDropdown, Button } from "react-bootstrap";
 import { AppContext } from "../../App";
 import './Navbar.css';
+import { useNavigate } from "react-router";
 
 // NavigationBar component is for header of application
 function NavigationBar() {
     const { activeUsername, setActiveUsername, success, setSuccess} = useContext(AppContext)
-
+    const navigate = useNavigate();
     useEffect(() => {
         async function checkIfUserIsLoggedIn() {
             const response = await axios.get('/api/users/isLoggedIn')
@@ -23,6 +24,7 @@ function NavigationBar() {
         await axios.post('/api/users/logOut')
         setActiveUsername(null)
         setSuccess(false);
+        navigate('/');
     }
 
     return (

@@ -73,8 +73,8 @@ function EditPost({postId, onCancel}) {
                     
                     <div className="edit-post-form-btn">
       
-                        <DoneOutline className="save-changes-icon" onClick={saveChanges}/> 
-                        <CancelOutlined onClick={onCancel}/>
+                        <DoneOutline className="save-changes-icon edit-profile-icon-btn" onClick={saveChanges}/> 
+                        <CancelOutlined className="edit-profile-icon-btn" onClick={onCancel}/>
                     </div>
                 </div>
             </form>
