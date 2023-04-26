@@ -83,7 +83,7 @@ function Register() {
     }
 
     return (
-        <div className="register-page">
+        <div className="custom-wrapper register-page">
             <Container>
                 <section>
                     <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive"> {errMsg} </p>

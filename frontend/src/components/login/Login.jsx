@@ -50,7 +50,7 @@ function Login() {
     }
 
     return (
-        <div className="login-page">
+        <div className="custom-wrapper login-page">
             <Container>
                 <section>
                     <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive"> {errMsg} </p>

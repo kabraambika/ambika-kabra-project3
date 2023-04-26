@@ -28,7 +28,7 @@ function NavigationBar() {
     }
 
     return (
-        <Navbar collapseOnSelect sticky="top" expand="lg" className="app-navbar">
+        <Navbar collapseOnSelect fixed="top" expand="lg" className="app-navbar">
         <Container>
             <Navbar.Brand as={Link} to={"/"}>
                 <img className="twitter-navbar-logo" src="/images/twitter.png" alt="logo"/> Home

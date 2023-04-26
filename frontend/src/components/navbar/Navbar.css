@@ -11,3 +11,13 @@
   width: 30px;
   height: 30px;
 }
+
+@media (min-width: 1024px), only screen and (min-device-width : 1024px) {
+  .app-navbar {
+    height: 80px;
+  }
+
+  #responsive-navbar-nav {
+    flex-flow: row-reverse;
+  }  
+}

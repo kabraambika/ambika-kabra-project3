@@ -53,7 +53,7 @@ function UserProfile() {
     }
 
     return (
-        <div className="user-profile">
+        <div className="custom-wrapper user-profile">
                 <Container className="user-profile-container">
                     <div className="user-profile-inner-container">
                     {activeUsername === currentUsername && <NewTweet/>}

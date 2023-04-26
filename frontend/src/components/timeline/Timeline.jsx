@@ -5,7 +5,7 @@ import './Timeline.css'
 // Timeline component is used as home page showing all posts
 function Timeline() {
     return (
-        <div className="Timeline">
+        <div className="custom-wrapper Timeline">
             <Feed/>
         </div>
     );

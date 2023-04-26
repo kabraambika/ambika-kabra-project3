@@ -82,17 +82,11 @@ a:hover {
   text-decoration: none;
 }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  border-top: 1px solid var(--twitter-lightest-gray);
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
 .margin-bottom-0 {
   margin-bottom: 0;
+}
+
+.custom-wrapper {
+  position: relative;
+  top: 80px;
 }
